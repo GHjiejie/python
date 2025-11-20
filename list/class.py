@@ -1,5 +1,7 @@
 
 class Person:
+    # __new__方法的作用是执行内存分配，并返回一个新创建的实例对象
+
     def __new__(cls, *args, **kwargs):
         print("Creating a new Person instance")
         print("cls:", cls)
@@ -8,6 +10,7 @@ class Person:
 
         instance = super(Person, cls).__new__(cls)
         return instance
+    # __init__方法的作用是初始化新创建的实例对象
 
     def __init__(self, name, age):
         print("Initializing a new Person instance")
