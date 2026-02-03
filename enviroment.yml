@@ -1,0 +1,7 @@
+name: python-demo
+channels:
+  - defaults
+dependencies:
+  - python=3.13
+  - pydantic
+prefix: /opt/miniconda3/envs/python-demo
